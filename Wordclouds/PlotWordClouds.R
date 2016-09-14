@@ -63,7 +63,7 @@ summary(somedata) # summary of all columns
 someCorpus = Corpus(VectorSource(somedata$text_))
 
 # Using a loop to replace a character (here #) with whitespace for each document in the corpus
-for(j in seq(tweetCorpus))   
+for(j in seq(someCorpus))   
    {   
     someCorpus[[j]] <- gsub("#", " ", tweetCorpus[[j]])   
   } 
