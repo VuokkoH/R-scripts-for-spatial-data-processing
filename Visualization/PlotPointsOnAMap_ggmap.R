@@ -13,7 +13,7 @@ library(ggmap)
 # somedata <- read.csv(filename.csv)
 
 #Create the map object
-#?get_map # run this line for details on the parameters (for example you can try location="Finland)
+#?get_map # run this line for details on the parameters (for example you can try location="Finland")
 map <- get_map(location = 'Helsinki', zoom = 12)
 
 #Plot the bacground map
@@ -23,4 +23,6 @@ ggmap(map)	# here you can add more options for plotting a ggmap object
 #Plot points on the map
 mapAndPoints <- ggmap(map) + geom_point(aes(x = lon, y = lat), data = somedata, alpha = .5)
 plot(mapAndPoints) # or just type in "mapAndPoints" in the console
+
+#Now have a look at your map and change the map parameters if necessary (zoom, location, size of the points..)
 
