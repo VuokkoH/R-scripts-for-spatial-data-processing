@@ -43,6 +43,7 @@ dir()
 ##-----------------
 ## READ IN DATA
 ##-----------------
+#read in data with a bunch of text stored in a spesific column
 somedata <- read.csv("Filename.csv")
 
 ##------------------
