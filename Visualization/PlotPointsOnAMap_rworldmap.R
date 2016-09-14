@@ -3,6 +3,7 @@
 # handy code for a quick visualization of global point data
 # Code is based on the blog post by Milano R user group http://www.milanor.net/blog/maps-in-r-plotting-data-points-on-a-map/ and help files
 
+# Install and download the package rworldmap
 install.packages("rworldmap")
 library(rworldmap)
 
@@ -14,7 +15,7 @@ newmap <- getMap(resolution = "low")
 
 #Plot the map object.
 plot(newmap, xlim = c(-180, 180), ylim = c(-90, 90), asp = 1) # the whole world
-#plot(newmap, xlim = c(10, 15), ylim = c(35, 50), asp = 1) # map centered in italy
+#plot(newmap, xlim = c(10, 15), ylim = c(35, 50), asp = 1) # map centered in Italy
 
 #Plot points on the map
 points(somedata$lon, somedata$lat, col = "red", cex = .5)
