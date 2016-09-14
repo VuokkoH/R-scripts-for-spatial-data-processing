@@ -27,7 +27,7 @@ Placenames2		<- c(	"seurasaari",
 				"arabianranta",
 				"viikki")
 
-InstagramWords 	<- c("nofilter",
+InstagramWords 	<- c( "nofilter",
 				"vscocam",
 				"vsco",
 				"finnishgirl",
@@ -38,15 +38,15 @@ InstagramWords 	<- c("nofilter",
 				"igmyshot",
 				"igfinland")
 
-FinnishWords	<- c("vielä",
+FinnishWords	<- c( "vielä",
 				"ihan",
 				"tänään") # in addition to stopwords
 
-EnglishWords	<- c("the",
+EnglishWords	<- c( "the",
 				"one",
 				"just") # in addition to stopwords
 
-SeasonsEngl		<- c("summer",
+SeasonsEngl		<- c( "summer",
 				"winter",
 				"autumn",
 				"spring")
