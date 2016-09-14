@@ -90,18 +90,18 @@ someText <- tm_map(someText, removeWords, c('helsinki', stopwords('finnish')))
 
 #generate list(s) of words:
 InstagramWords 	<- c("nofilter",
-				"vscocam",
-				"vsco",
-				"finnishgirl",
-				"selfie",
-				"latergram",
-				"instagood",
-				"igfinland",
-				"igmyshot")
+			"vscocam",
+			"vsco",
+			"finnishgirl",
+			"selfie",
+			"latergram",
+			"instagood",
+			"igfinland",
+			"igmyshot")
 
 
 #combine the lists (different combinations can be made:
-WordsToBeRemoved 	<- c(	Placenames1, Placenames2, InstagramWords, FinnishWords, EnglishWords, SeasonsEngl, SeasonsFin, Events)
+WordsToBeRemoved <- c(Placenames1, Placenames2, InstagramWords, FinnishWords, EnglishWords, SeasonsEngl, SeasonsFin, Events)
 
 # run the remove words -function: 		
 someText <- tm_map(someText, removeWords, WordsToBeRemoved) 
