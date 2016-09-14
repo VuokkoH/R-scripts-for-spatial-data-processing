@@ -12,7 +12,7 @@
 ## CREDITS
 ##-------------
 # Building the wordclouds code is based on this tutorial: https://www.r-bloggers.com/building-wordclouds-in-r/
-# And code from the course "IS 1: Online Social Media Analytics" at the Jyv‰skyl‰ Summer School 2016
+# And code from the course "IS 1: Online Social Media Analytics" at the Jyv√§skyl√§ Summer School 2016
 
 ##----------------
 ## PACKAGES
@@ -34,8 +34,6 @@ library(wordcloud)
 #set working directory
 setwd("C:/.../") #insert path here
 
-setwd("..")
-
 #get working directory
 getwd()
 
@@ -45,9 +43,7 @@ dir()
 ##-----------------
 ## READ IN DATA
 ##-----------------
-
-#somedata <- read.csv("Filename.csv")
-somedata <- read.csv("Insta_HKI_kaikkiviheralueet_31AUG_exitedForTextAnalysis.csv")
+somedata <- read.csv("Filename.csv")
 
 ##------------------
 ## CHECK THE DATA
