@@ -1,6 +1,7 @@
 # R-scripts-for-spatial-data-processing
 
 I am collecting here simple R scripts for processing and analysis of spatial data.
+Mostly very basic stuff that I have found useful on a regular basis.
 
 This is a work in progress, any comments and suggestions are welcome!
 
