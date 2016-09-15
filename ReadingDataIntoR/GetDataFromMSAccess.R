@@ -56,7 +56,7 @@ sqlTables(channel)
 fields = "lat, lon, Location, text_ " # specify columns for the SQL query
 tablename = "mytable" # insert here the name of the table you want to get. Run 'sqlTables(channel)' to list all available tables.
 
-query <- paste("select",fields, "from", tablename)
+query <- paste("select", fields,"from", tablename)
 
 # Run the sql query and get the data
 # NOTE! R crashes easily!! Pay attention to the type of data you are trying to read and leave out any problematic fields.
