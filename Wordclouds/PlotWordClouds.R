@@ -69,7 +69,7 @@ someCorpus = Corpus(VectorSource(somedata$text_))
 # Using a loop to replace a character (here #) with whitespace for each document in the corpus
 for(j in seq(someCorpus))   
    {   
-    someCorpus[[j]] <- gsub("#", " ", tweetCorpus[[j]])   
+    someCorpus[[j]] <- gsub("#", " ", someCorpus[[j]])   
   } 
 
 # Converting the corpus into plain text document 
@@ -123,8 +123,6 @@ WordsToBeRemoved <- c(Placenames1, Placenames2, InstagramWords, FinnishWords, En
 #Option 4: remove also references to placenames, events and seasons (modify the list if needed)
 WordsToBeRemoved <- c(Placenames1, Placenames2, InstagramWords, FinnishWords, EnglishWords, SeasonsEngl, SeasonsFin, Events)
 
-
-
 # run the remove words -function: 		
 someText <- tm_map(someText, removeWords, WordsToBeRemoved) 
 
@@ -133,21 +131,19 @@ someText <- tm_map(someText, removeWords, WordsToBeRemoved)
 #-----------------------
 wordcloud(someText, max.words = 100, random.order = FALSE, colors="darkgreen")
 
-
 #----------------------------------
-# Changing colors for the wordcloud
+# FINE-TUNING THE WORDCLOUD
 #----------------------------------
 
-# Based on this example: https://www.r-bloggers.com/joy-to-the-world-and-also-anticipation-disgust-surprise/
+# Setting the color palette is based on this example: https://www.r-bloggers.com/joy-to-the-world-and-also-anticipation-disgust-surprise/
 
 # Color palette from RColorBrewer: http://www.sthda.com/sthda/RDoc/images/rcolorbrewer.png
 # ColorBrewer palettes Documentation: http://127.0.0.1:19773/library/RColorBrewer/html/ColorBrewer.html
 
-
-colorpalette = brewer.pal(9,"Greens")# get color codes from the "Greens" color palette
+colorpalette = brewer.pal(9,"YlGn")# get color codes from the "Greens" color palette
 colorpalette <- colorpalette[-(1:4)] # take the darkest tones
-wordcloud(someText, max.words = 100, random.order = FALSE, colors=colorpalette) # plot word cloud with colors
+wordcloud(someText, max.words = 100, random.order = FALSE, colors=colorpalette, min.freq=10, scale=c(5,1.5)) # plot word cloud with colors
 
-
+?wordcloud
 # Examine the wordcloud and remove additional words, if necessary and adjust the parameters for plotting the wordcloud.
 # Done!
