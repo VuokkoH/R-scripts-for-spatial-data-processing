@@ -21,11 +21,15 @@ Placenames2		<- c(	"seurasaari",
 				"thisisfinland",
 				"korkeasaarizoo",
 				"korkeasaaressa",
+				"högholmen",
 				"lammassaari",
 				"uutela",
 				"töölönlahti",
 				"arabianranta",
-				"viikki")
+				"viikki",
+				"vuosaari",
+				"paloheinä",
+				"herttoniemi")
 
 InstagramWords 	<- c( "nofilter",
 				"vscocam",
