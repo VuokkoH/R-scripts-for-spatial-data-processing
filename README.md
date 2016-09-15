@@ -9,7 +9,7 @@ This is a work in progress, any comments and suggestions are welcome!
 1. Reading shapefiles (coming up..)
 2. Reading coordinate information from text files (coming up..)
 3. Writing shapefiles (coming up..)
-3. Getting data from MS Access database
+3. [Getting data from MS Access database] (GetDataFromMSAccess.R)
 4. Getting data from PostgreSQL database (coming up..)
 
 ### Map visualizations in R
