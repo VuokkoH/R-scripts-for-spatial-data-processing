@@ -15,4 +15,11 @@ No content yet!
 
 
 
+### Geotagged Social Media Data in R
+
+1. Getting tweets (no code here yet)
+2. [Plot points on google maps] (Visualization/PlotPointsOnAMap_ggmap.R) or [Plot points on a simple world map] (Visualization/PlotPointsOnAMap_rworldmap.R)
+3. [Plotting wordclouds] (Wordclouds/PlotWordClouds.R)
+
+
 
