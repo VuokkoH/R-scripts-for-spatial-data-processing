@@ -47,7 +47,11 @@ dir()
 ## READ IN DATA
 ##-----------------
 #read in data with a bunch of text stored in a spesific column
-somedata <- read.csv("Filename.csv")
+#Option 1: from a text-file
+#somedata <- read.csv("Filename.csv")
+
+#Option 2: from a database
+# see separate code for getting data from PostgreSQL or MSAccess
 
 ##------------------
 ## CHECK THE DATA
@@ -98,18 +102,24 @@ someText <- tm_map(someText, removeWords, stopwords('finnish'))
 # Option 1: In addition to stopwords, remove general instagram-related words that are not relevant
 
 #generate list(s) of words to be removed:
-InstagramWords 	<- c("nofilter",
-			"vscocam",
-			"vsco",
-			"finnishgirl",
-			"selfie",
-			"latergram",
-			"instagood",
-			"igfinland",
-			"igmyshot")
+InstagramWords 	<- c( "nofilter",
+				"vscocam",
+				"vscofinland",
+				"vscohelsinki",
+				"vsco",
+				"finnishgirl",
+				"selfie",
+				"latergram",
+				"instagood",
+				"igfinland",
+				"igmyshot",
+				"igfinland",
+				"igeuropa",
+				"igeurope",
+				"igspecialist")
 
 #Save the list in a new variable:
-# WordsToBeRemoved <- c(InstagramWords)
+WordsToBeRemoved <- c(InstagramWords)
 
 #You can generate several lists of words in order to manage which one you want to remove.
 # you need to run file worldists_helsinki.R in order to get these wordlists below.
@@ -129,7 +139,9 @@ someText <- tm_map(someText, removeWords, WordsToBeRemoved)
 #-----------------------
 # PLOTTING THE WORDCLOUD
 #-----------------------
-wordcloud(someText, max.words = 100, random.order = FALSE, colors="darkgreen")
+#wordcloud(someText, max.words = 100, random.order = FALSE, colors="darkgreen",min.freq=7)
+wordcloud(someText, max.words = 80, random.order = FALSE, colors="black",min.freq=10)
+
 
 #----------------------------------
 # FINE-TUNING THE WORDCLOUD
@@ -140,9 +152,9 @@ wordcloud(someText, max.words = 100, random.order = FALSE, colors="darkgreen")
 # Color palette from RColorBrewer: http://www.sthda.com/sthda/RDoc/images/rcolorbrewer.png
 # ColorBrewer palettes Documentation: http://127.0.0.1:19773/library/RColorBrewer/html/ColorBrewer.html
 
-colorpalette = brewer.pal(9,"YlGn")# get color codes from the "Greens" color palette
-colorpalette <- colorpalette[-(1:4)] # take the darkest tones
-wordcloud(someText, max.words = 100, random.order = FALSE, colors=colorpalette, min.freq=10, scale=c(5,1.5)) # plot word cloud with colors
+colorpalette = brewer.pal(9,"Purples")# get color codes from the "Greens" color palette
+colorpalette <- colorpalette[-(1:2)] # take the darkest tones
+wordcloud(someText, max.words = 100, random.order = FALSE, colors=colorpalette, min.freq=10, scale=c(6,1.7)) # plot word cloud with colors
 
 ?wordcloud
 # Examine the wordcloud and remove additional words, if necessary and adjust the parameters for plotting the wordcloud.

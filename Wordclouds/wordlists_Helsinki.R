@@ -29,10 +29,13 @@ Placenames2		<- c(	"seurasaari",
 				"viikki",
 				"vuosaari",
 				"paloheinä",
-				"herttoniemi")
+				"herttoniemi",
+				"meilahti")
 
 InstagramWords 	<- c( "nofilter",
 				"vscocam",
+				"vscofinland",
+				"vscohelsinki",
 				"vsco",
 				"finnishgirl",
 				"selfie",
@@ -40,15 +43,26 @@ InstagramWords 	<- c( "nofilter",
 				"instagood",
 				"igfinland",
 				"igmyshot",
-				"igfinland")
+				"igfinland",
+				"igeuropa",
+				"igeurope",
+				"igspecialist")
 
 FinnishWords	<- c( "vielä",
 				"ihan",
-				"tänään") # in addition to stopwords
+				"vähän",
+				"tänään",
+				"täällä",
+				"että",
+				"sitten",
+				"taas",
+				"myös") # in addition to stopwords
 
 EnglishWords	<- c( "the",
 				"one",
-				"just") # in addition to stopwords
+				"just",
+				"last",
+				"little") # in addition to stopwords
 
 SeasonsEngl		<- c( "summer",
 				"winter",
@@ -64,4 +78,5 @@ Events		<- c(	"wknd15",
 				"wknd",
 				"kissojenyö",
 				"weekendfestival",
-				"midsummer") 
+				"midsummer",
+				"juhannus") 
