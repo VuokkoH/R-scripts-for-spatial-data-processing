@@ -7,7 +7,7 @@ This is a work in progress, any comments and suggestions are welcome!
 
 ### Reading and writing spatial data in R
 
-1. Reading shapefiles (coming up..)
+1. [Reading shapefiles] (/ReadingDataIntoR/readShapefile.R)
 2. Reading coordinate information from text files (coming up..)
 3. Writing shapefiles (coming up..)
 3. [Getting data from MS Access database] (ReadingDataIntoR/GetDataFromMSAccess.R)
