@@ -13,6 +13,10 @@ This is a work in progress, any comments and suggestions are welcome!
 3. [Getting data from MS Access database] (ReadingDataIntoR/GetDataFromMSAccess.R)
 4. Getting data from PostgreSQL database (coming up..)
 
+### Data processing and spatial analysis in R
+
+1. [Point-in-polygon: join attributes from polygons to points] (SpatialAnalysis/PointInPolygon.R)
+
 ### Map visualizations in R
 
 1. [Plot points on a simple world map] (Visualization/PlotPointsOnAMap_rworldmap.R)
