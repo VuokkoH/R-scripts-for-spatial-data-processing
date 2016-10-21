@@ -86,13 +86,15 @@ summary(point_data)
 ## POINT-IN-POLYGON
 ###########################
 
-#joining country info to tweets based on a point-in-polygon analysis:
+#joining polygon info to points based on a point-in-polygon analysis:
 point_in_polygon <- over(point_data, polygons)
 summary(point_in_polygon)
 
-#The location info should be the same length as the original data
+#The resulting table should be the same length as the original data
 nrow(point_data)
 nrow(point_in_polygon)
+
+#note, the result table is non-spatial and is lacking the attributes from the points.
 
 #######################################
 # JOIN ATTRIBUTES TO SPATIAL POINT DATA 
