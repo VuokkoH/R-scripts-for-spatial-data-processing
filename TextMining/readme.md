@@ -8,6 +8,9 @@ Custom-made for tweet text and instagram captions from Finland, but should work 
 
 These scripts are a work in progress, don't hesitate to raise an issue if you find something that is not working!
 
+## Assumptions:
+These tools assume you have a dataframe with at least two columns: One column with text (type: string), and one column with subregion name (type: factor).
+
 ## Basic steps:
 
 1. Creating a corpus (this step is currently included in the other scripts)
