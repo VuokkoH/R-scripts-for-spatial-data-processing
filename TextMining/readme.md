@@ -14,4 +14,4 @@ These scripts are a work in progress, don't hesitate to raise an issue if you fi
 2. [Plotting wordclouds] (/TextMining/PlotWordClouds.R)
 3. [Plotting most frequent words] (/TextMining/WordFrequencies_top10.R)
 
-In order to run these scripts you need to first read in your data..
+In order to run these scripts you need to first [read in your data..] (/R-scripts-for-spatial-data-processing/tree/master/ReadingDataIntoR)
