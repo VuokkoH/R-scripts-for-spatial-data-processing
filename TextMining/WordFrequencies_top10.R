@@ -1,7 +1,7 @@
 
 ####################################################
 # PROCESSING TEXT IN R:
-# MOST FREQUENT WORDS IN SOCIAL MEDIA BY REGION
+# MOST FREQUENT WORDS IN SOCIAL MEDIA DATA (BY REGION)
 ###################################################
 
 # Code for text processing and plotting word frequencies 
