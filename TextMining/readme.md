@@ -12,6 +12,6 @@ These scripts are a work in progress, don't hesitate to raise an issue if you fi
 
 1. Creating a corpus (this step is currently included in the other scripts)
 2. [Plotting wordclouds] (/TextMining/PlotWordClouds.R)
-3. [Plotting most frequent words] (/TextMining/readme.md)
+3. [Plotting most frequent words] (/TextMining/WordFrequencies_top10.R)
 
 In order to run these scripts you need to first read in your data..
