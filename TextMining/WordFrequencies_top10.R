@@ -26,16 +26,16 @@
 # AUTHOR:
 # - This code has been put together by Vuokko Heikinheimo (PhD student at the Department of Geosciences and Geography, University of Helsinki)
 # for the project Social Media Data in Conservation science 
-# - Code is based on examples from the Online Social Media Analytics -course in Jyv‰skyl‰ Summer Shool 2016 and existing online tutorials, see below: 
+# - Code is based on examples from the Online Social Media Analytics -course in Jyv√§skyl√§ Summer Shool 2016 and existing online tutorials, see below: 
 
 # TEXT PROCESSING AND WORD FREQUENCIES:
 # - Basic text mining in R: https://rstudio-pubs-static.s3.amazonaws.com/31867_8236987cf0a8444e962ccd2aec46d9c3.html
-# - code from the course "IS 1: Online Social Media Analytics" at the Jyv‰skyl‰ Summer School 2016
+# - code from the course "IS 1: Online Social Media Analytics" at the Jyv√§skyl√§ Summer School 2016
 
 # TEXT PROCESSING AND WORDCLOUDS (see separate code):
 # - https://www.r-bloggers.com/building-wordclouds-in-r/
 # - https://amueller.github.io/word_cloud/auto_examples/a_new_hope.html
-# - code from the course "IS 1: Online Social Media Analytics" at the Jyv‰skyl‰ Summer School 2016
+# - code from the course "IS 1: Online Social Media Analytics" at the Jyv√§skyl√§ Summer School 2016
 
 ##----------------
 ## DISCLAIMER
@@ -324,7 +324,6 @@ setwd("C:/HY-Data/VUOKKHEI/documents/TEMP/testplots")
 
 # specify the factors wor based on which separate plots will be generated:
 subregions = levels(data$loc_name)
-subregion = subregions[414]
 
 for (subregion in subregions){ 
 	print(subregion)
