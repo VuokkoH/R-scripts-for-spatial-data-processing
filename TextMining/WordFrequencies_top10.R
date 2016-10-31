@@ -320,7 +320,7 @@ if (max(wf$freq)>= 100){
 getwd()
 
 #set a new working directory if you don't want to use the current!
-setwd("C:/HY-Data/VUOKKHEI/documents/TEMP/testplots")
+#setwd("C:/documents/TEMP/")
 
 # specify the factors wor based on which separate plots will be generated:
 subregions = levels(data$loc_name)
