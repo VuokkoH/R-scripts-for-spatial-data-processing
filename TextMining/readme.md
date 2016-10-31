@@ -9,7 +9,7 @@ Custom-made for tweet text and instagram captions from Finland, but should work 
 These scripts are a work in progress, don't hesitate to raise an issue if you find something that is not working!
 
 ## Assumptions:
-These tools assume you have a dataframe with at least two columns: One column with text (type: string), and one column with subregion name (type: factor).
+These tools assume you have a dataframe with at least two columns: One column with text, and one column with subregion name. With a little modification, you can also run the code without using the subregions. 
 
 ## Basic steps:
 
