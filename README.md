@@ -28,7 +28,9 @@ This is a work in progress, any comments and suggestions are welcome!
 
 1. Getting tweets (no code here yet)
 2. [Plot points on google maps] (Visualization/PlotPointsOnAMap_ggmap.R) or [Plot points on a simple world map] (Visualization/PlotPointsOnAMap_rworldmap.R)
-3. [Plotting wordclouds] (Wordclouds/PlotWordClouds.R)
+3. [Plotting wordclouds] (TextMining/PlotWordClouds.R)
+4. [Most frequent words] (TextMining/WordFrequencies_top10.R)
+
 
 
 
